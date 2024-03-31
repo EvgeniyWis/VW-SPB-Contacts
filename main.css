@@ -43,6 +43,11 @@ body {
 
 * {
     font-family: var(--font-family);
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    box-sizing: border-box;
 }
 
 .blur {
@@ -67,10 +72,6 @@ h5,
 h6,
 p {
     margin: 0;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 input {
@@ -159,4 +160,5 @@ select {
 
 main {
     flex-grow: 1;
+    height: 100vh;
 }
