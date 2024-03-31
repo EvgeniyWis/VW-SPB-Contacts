@@ -36,6 +36,11 @@ header {
   z-index: 3;
   /* Навигация */
 }
+@media (max-width: 500px) {
+  header {
+    height: 60px;
+  }
+}
 header nav {
   display: flex;
   justify-content: center;
