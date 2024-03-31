@@ -4,13 +4,17 @@
     height: 500px;
     margin-top: 90px;
 
+    @media (max-width: 500px) {
+        height: 230px;
+    }
+
     .main_img {
         width: 100%;
         max-height: 100%;
         object-fit: cover;
 
         @media (max-width: 500px) {
-            max-height: 34%;
+            max-height: 74%;
         }
     }
 
@@ -28,6 +32,100 @@
 
         @media (max-width: 500px) {
             left: 3%;
+        }
+    }
+
+    &--caption {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: var(--black);
+        margin: 50px 0;
+
+        @media (max-width: 500px) {
+            margin: 10px 0;
+            font-size: 32px;
+        }
+    }
+}
+
+// Карта
+.map {
+    margin-top: 10px;
+    margin-bottom: 250px;
+    padding: 0 250px;
+    position: relative;
+    height: 100%;
+
+    &-iframe {
+        height: 700px;
+        position: relative;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+
+        @media (max-width: 500px) {
+            height: 360px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        padding: 40px;
+    }
+
+    @media (max-width: 500px) {
+        padding: 0;
+    }
+
+    &-contacts {
+        z-index: 3;
+        padding: 30px;
+        gap: 24px;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        color: var(--black);
+
+        @media (max-width: 500px) {
+            position: relative;
+            padding: 10px;
+            left: 0;
+            top: 0;
+            transform: none;
+            z-index: 0;
+            margin-bottom: 20px;
+        }
+
+        &-title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39.01px;
+            text-align: center;
+            color: var(--black);
+
+            @media (max-width: 500px) {
+                display: none;
+            }
+        }
+    }
+
+    &-contact {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: var(--black);
+
+        &-text,
+        &-phone {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24.38px;
+            text-align: left;
         }
     }
 }
