@@ -27,7 +27,7 @@ header {
   width: 100%;
   order: 0;
   background-color: var(--white);
-  height: 93px;
+  min-height: 93px;
   position: fixed;
   top: 0;
   bottom: 0;
