@@ -45,7 +45,7 @@
   position: relative;
   left: 13.5%;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .main_screen .breadcrumbs {
     left: 3%;
   }
