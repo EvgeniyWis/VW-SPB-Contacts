@@ -104,8 +104,9 @@ header nav .navbar__menu {
     display: none;
   }
 }
-header nav .navbar__menu li {
+header nav .navbar__menu li:nth-of-type(6) {
   cursor: pointer;
+  color: var(--dark-blue);
 }
 header nav .navbar__info {
   display: flex;

@@ -107,7 +107,10 @@ header {
                 }
 
                 li {
-                    cursor: pointer;
+                    &:nth-of-type(6) {
+                        cursor: pointer;
+                        color: var(--dark-blue);
+                    }
                 }
             }
 
